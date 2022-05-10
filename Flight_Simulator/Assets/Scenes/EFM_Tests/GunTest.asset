@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd583c96716293f468e3ea085b29cdd1, type: 3}
+  m_Name: GunTest
+  m_EditorClassIdentifier: 
+  GunRate: 1500
+  GunMaximumAmmo: 300
+  RoundSpeed: 500
+  RoundDispersion: 1
+  Round: {fileID: 5408499790178002865, guid: 90d71fc22dc712349a8a1f1046a54318, type: 3}

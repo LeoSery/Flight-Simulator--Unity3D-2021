@@ -1,0 +1,4 @@
+repository "Flight_Simulator@YNOV_teams@cloud"
+  path "/"
+    br "/main"
+    co "/main"
