@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wing
   - Ground
+  - Balle
   layers:
   - Default
   - TransparentFX

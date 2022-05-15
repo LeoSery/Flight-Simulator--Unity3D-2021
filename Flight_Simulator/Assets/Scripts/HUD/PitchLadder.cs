@@ -31,8 +31,6 @@ public class PitchLadder : MonoBehaviour
 
     private void Awake()
     {
-        Assert.IsTrue(CurrentCamera);
-        Assert.IsTrue(PlaneTransform);
         Assert.IsTrue(PitchNegativePrefab);
         Assert.IsTrue(PitchPositivePrefab);
         Assert.IsTrue(BarInterval > 0);
@@ -69,6 +67,9 @@ public class PitchLadder : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (PlaneTransform == null)
+            return;
+
         float currentPitch = -PlaneTransform.eulerAngles.x;
         float currentRoll = PlaneTransform.eulerAngles.z;
         transform.localEulerAngles = new Vector3(0, 0, -currentRoll);

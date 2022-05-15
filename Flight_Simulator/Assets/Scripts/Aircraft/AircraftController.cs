@@ -27,6 +27,12 @@ public class AircraftController : MonoBehaviour
             m_isGrounded = false;
     }
 
+    void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     void Start()
     {
         m_physics = GetComponent<AircraftPhysics>();

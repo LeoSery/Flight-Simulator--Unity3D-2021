@@ -44,8 +44,6 @@ public class Compass : MonoBehaviour
 
     private void Awake()
     {
-        Assert.IsTrue(PlaneTransform);
-        Assert.IsTrue(CurrentCamera);
         Assert.IsTrue(LargeTickPrefab);
         Assert.IsTrue(SmallTickPrefab);
         Assert.IsTrue(TextPrefab);
@@ -89,6 +87,9 @@ public class Compass : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (PlaneTransform == null)
+            return;
+
         float yaw = PlaneTransform.eulerAngles.y;
 
         foreach (var tick in m_ticks)

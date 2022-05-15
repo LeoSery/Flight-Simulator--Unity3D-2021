@@ -20,9 +20,7 @@ public class HUD : MonoBehaviour
         Assert.IsTrue(VelocityMarker);
         Assert.IsTrue(SpeedText);
         Assert.IsTrue(AltitudeText);
-        Assert.IsTrue(PlaneTransform);
-        Assert.IsTrue(PlaneRigidBody);
-        Assert.IsTrue(Camera);
+        //Assert.IsTrue(Camera);
     }
 
     private Vector3 TransformToHUDSpace(Vector3 worldSpace)
@@ -33,6 +31,9 @@ public class HUD : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (PlaneTransform == null || PlaneRigidBody == null)
+            return;
+
         Vector3 velocity = (PlaneRigidBody.velocity.sqrMagnitude > 1) ? PlaneRigidBody.velocity : PlaneTransform.forward;
 
         // FPM
