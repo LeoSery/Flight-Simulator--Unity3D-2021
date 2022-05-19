@@ -30,6 +30,8 @@ In this project, you can :
 
 [![](https://s8.gifyu.com/images/FlightSimulator2.gif)](https://gifyu.com/image/SsXlT)
 
+![](https://i.imgur.com/kqGoZth.gif)
+
 ## How to open the project:
 
 - Clone the git repository to your computer with the following command :
